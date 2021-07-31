@@ -9,8 +9,7 @@
   },
   "dependencies": {
     "@opam/dune": ">= 2.0",
-    "@opam/js_of_ocaml": "*",
-    "@opam/js_of_ocaml-ppx": "*",
+    "@opam/ppxlib": "*",
     {%- if syntax == 'Reason' %}
     "@opam/reason": "*",
     {%- endif %}

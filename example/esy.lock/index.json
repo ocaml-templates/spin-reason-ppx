@@ -1,5 +1,5 @@
 {
-  "checksum": "f2db4d8d5fdcbae0a672dab7d9f91118",
+  "checksum": "44af16143ad3b253978d62997819921d",
   "root": "demo@link-dev:./esy.json",
   "node": {
     "ocaml@4.12.0@d41d8cd9": {
@@ -24,9 +24,7 @@
       "overrides": [],
       "dependencies": [
         "ocaml@4.12.0@d41d8cd9", "@opam/reason@opam:3.7.0@494dd52d",
-        "@opam/js_of_ocaml-ppx@opam:3.9.0@8454b2f9",
-        "@opam/js_of_ocaml@opam:3.9.0@db27df96",
-        "@opam/dune@opam:2.9.0@489e77a9"
+        "@opam/ppxlib@opam:0.22.2@61009929", "@opam/dune@opam:2.9.0@489e77a9"
       ],
       "devDependencies": [
         "ocaml@4.12.0@d41d8cd9", "@opam/utop@opam:2.8.0@76625c33",
@@ -1092,98 +1090,6 @@
         "@opam/lwt_log@opam:1.1.1@fc97477f", "@opam/lwt@opam:5.4.1@37ffbe37",
         "@opam/dune@opam:2.9.0@489e77a9",
         "@opam/camomile@opam:1.0.2@4c270e23"
-      ]
-    },
-    "@opam/js_of_ocaml-ppx@opam:3.9.0@8454b2f9": {
-      "id": "@opam/js_of_ocaml-ppx@opam:3.9.0@8454b2f9",
-      "name": "@opam/js_of_ocaml-ppx",
-      "version": "opam:3.9.0",
-      "source": {
-        "type": "install",
-        "source": [
-          "archive:https://opam.ocaml.org/cache/sha256/74/74d3b17b089af04cde29173c9e7a1154b9a784ba415aeef5026440aeb907cb54#sha256:74d3b17b089af04cde29173c9e7a1154b9a784ba415aeef5026440aeb907cb54",
-          "archive:https://github.com/ocsigen/js_of_ocaml/releases/download/3.9.0/js_of_ocaml-3.9.0.tbz#sha256:74d3b17b089af04cde29173c9e7a1154b9a784ba415aeef5026440aeb907cb54"
-        ],
-        "opam": {
-          "name": "js_of_ocaml-ppx",
-          "version": "3.9.0",
-          "path": "esy.lock/opam/js_of_ocaml-ppx.3.9.0"
-        }
-      },
-      "overrides": [],
-      "dependencies": [
-        "ocaml@4.12.0@d41d8cd9", "@opam/ppxlib@opam:0.22.2@61009929",
-        "@opam/js_of_ocaml@opam:3.9.0@db27df96",
-        "@opam/dune@opam:2.9.0@489e77a9", "@esy-ocaml/substs@0.0.1@d41d8cd9"
-      ],
-      "devDependencies": [
-        "ocaml@4.12.0@d41d8cd9", "@opam/ppxlib@opam:0.22.2@61009929",
-        "@opam/js_of_ocaml@opam:3.9.0@db27df96",
-        "@opam/dune@opam:2.9.0@489e77a9"
-      ]
-    },
-    "@opam/js_of_ocaml-compiler@opam:3.9.1@19f5797f": {
-      "id": "@opam/js_of_ocaml-compiler@opam:3.9.1@19f5797f",
-      "name": "@opam/js_of_ocaml-compiler",
-      "version": "opam:3.9.1",
-      "source": {
-        "type": "install",
-        "source": [
-          "archive:https://opam.ocaml.org/cache/sha256/a6/a6de57f502676890191b966d2317a2bef7835786664c37f24e974aed66286545#sha256:a6de57f502676890191b966d2317a2bef7835786664c37f24e974aed66286545",
-          "archive:https://github.com/ocsigen/js_of_ocaml/releases/download/3.9.1/js_of_ocaml-3.9.1.tbz#sha256:a6de57f502676890191b966d2317a2bef7835786664c37f24e974aed66286545"
-        ],
-        "opam": {
-          "name": "js_of_ocaml-compiler",
-          "version": "3.9.1",
-          "path": "esy.lock/opam/js_of_ocaml-compiler.3.9.1"
-        }
-      },
-      "overrides": [],
-      "dependencies": [
-        "ocaml@4.12.0@d41d8cd9", "@opam/yojson@opam:1.7.0@69d87312",
-        "@opam/ppxlib@opam:0.22.2@61009929",
-        "@opam/ocamlfind@opam:1.9.1@b748edf6",
-        "@opam/menhir@opam:20210419@11c42419",
-        "@opam/dune@opam:2.9.0@489e77a9",
-        "@opam/cmdliner@opam:1.0.4@93208aac",
-        "@esy-ocaml/substs@0.0.1@d41d8cd9"
-      ],
-      "devDependencies": [
-        "ocaml@4.12.0@d41d8cd9", "@opam/yojson@opam:1.7.0@69d87312",
-        "@opam/ppxlib@opam:0.22.2@61009929",
-        "@opam/menhir@opam:20210419@11c42419",
-        "@opam/dune@opam:2.9.0@489e77a9",
-        "@opam/cmdliner@opam:1.0.4@93208aac"
-      ]
-    },
-    "@opam/js_of_ocaml@opam:3.9.0@db27df96": {
-      "id": "@opam/js_of_ocaml@opam:3.9.0@db27df96",
-      "name": "@opam/js_of_ocaml",
-      "version": "opam:3.9.0",
-      "source": {
-        "type": "install",
-        "source": [
-          "archive:https://opam.ocaml.org/cache/sha256/74/74d3b17b089af04cde29173c9e7a1154b9a784ba415aeef5026440aeb907cb54#sha256:74d3b17b089af04cde29173c9e7a1154b9a784ba415aeef5026440aeb907cb54",
-          "archive:https://github.com/ocsigen/js_of_ocaml/releases/download/3.9.0/js_of_ocaml-3.9.0.tbz#sha256:74d3b17b089af04cde29173c9e7a1154b9a784ba415aeef5026440aeb907cb54"
-        ],
-        "opam": {
-          "name": "js_of_ocaml",
-          "version": "3.9.0",
-          "path": "esy.lock/opam/js_of_ocaml.3.9.0"
-        }
-      },
-      "overrides": [],
-      "dependencies": [
-        "ocaml@4.12.0@d41d8cd9", "@opam/uchar@opam:0.0.2@c8218eea",
-        "@opam/ppxlib@opam:0.22.2@61009929",
-        "@opam/js_of_ocaml-compiler@opam:3.9.1@19f5797f",
-        "@opam/dune@opam:2.9.0@489e77a9", "@esy-ocaml/substs@0.0.1@d41d8cd9"
-      ],
-      "devDependencies": [
-        "ocaml@4.12.0@d41d8cd9", "@opam/uchar@opam:0.0.2@c8218eea",
-        "@opam/ppxlib@opam:0.22.2@61009929",
-        "@opam/js_of_ocaml-compiler@opam:3.9.1@19f5797f",
-        "@opam/dune@opam:2.9.0@489e77a9"
       ]
     },
     "@opam/fpath@opam:0.7.3@674d8125": {
